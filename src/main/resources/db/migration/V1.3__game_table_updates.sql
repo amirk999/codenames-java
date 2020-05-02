@@ -1,0 +1,5 @@
+ALTER TABLE games
+ADD COLUMN status SMALLINT,
+ADD COLUMN red_remaining SMALLINT,
+ADD COLUMN blue_remaining SMALLINT,
+ADD COLUMN current_turn SMALLINT;

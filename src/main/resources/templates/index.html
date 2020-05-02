@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link href="main.css" rel="stylesheet">
+
+    <title>Codenames!!!</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Codenames</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+
+    </div>
+</nav>
+
+<main role="main" class="container">
+
+    <div class="main-container">
+        <h1>Welcome to my practice codenames game!</h1>
+
+        <form id="game-form">
+            <div class="form-group">
+                <label for="playerInput">Player Name</label>
+                <input name="player" type="text" class="form-control" id="playerInput" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="nameInput">Game Name</label>
+                <input name="name" type="text" class="form-control" id="nameInput" placeholder="Enter game name">
+            </div>
+            <div class="form-group">
+                <label for="passwordInput">Password</label>
+                <input name="password" type="password" class="form-control" id="passwordInput" placeholder="Password">
+            </div>
+            <button id="create-btn" type="button" class="btn btn-primary">Create</button>
+            <button id="find-btn" type="button" class="btn btn-primary">Find</button>
+        </form>
+
+        <div class="row"></div>
+
+        <div class="row">
+            <div class="col-sm">
+                <div id="index-0" class="card" index="0">
+                    <div class="card-body">
+                        <h5 id="card-0" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-1" class="card" index="1">
+                    <div class="card-body">
+                        <h5 id="card-1" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-2" class="card" index="2">
+                    <div class="card-body">
+                        <h5 id="card-2" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-3" class="card" index="3">
+                    <div class="card-body">
+                        <h5 id="card-3" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-4" class="card" index="4">
+                    <div class="card-body">
+                        <h5 id="card-4"  class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div id="index-5" class="card" index="5">
+                    <div class="card-body">
+                        <h5 id="card-5" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-6" class="card" index="6">
+                    <div class="card-body">
+                        <h5 id="card-6" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-7" class="card" index="7">
+                    <div class="card-body">
+                        <h5 id="card-7" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-8" class="card" index="8">
+                    <div class="card-body">
+                        <h5 id="card-8" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-9" class="card" index="9">
+                    <div class="card-body">
+                        <h5 id="card-9" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div id="index-10" class="card" index="10">
+                    <div class="card-body">
+                        <h5 id="card-10" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-11" class="card" index="11">
+                    <div class="card-body">
+                        <h5 id="card-11" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-12" class="card" index="12">
+                    <div class="card-body">
+                        <h5 id="card-12" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-13" class="card" index="13">
+                    <div class="card-body">
+                        <h5 id="card-13" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-14" class="card" index="14">
+                    <div class="card-body">
+                        <h5 id="card-14" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div id="index-15" class="card" index="15">
+                    <div class="card-body">
+                        <h5 id="card-15" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-16" class="card" index="16">
+                    <div class="card-body">
+                        <h5 id="card-16" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-17" class="card" index="17">
+                    <div class="card-body">
+                        <h5 id="card-17" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-18" class="card" index="18">
+                    <div class="card-body">
+                        <h5 id="card-18" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-19" class="card" index="19">
+                    <div class="card-body">
+                        <h5 id="card-19" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div id="index-20" class="card" index="20">
+                    <div class="card-body">
+                        <h5 id="card-20" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-21" class="card" index="21">
+                    <div class="card-body">
+                        <h5 id="card-21" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-22" class="card" index="22">
+                    <div class="card-body">
+                        <h5 id="card-22" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-23" class="card" index="23">
+                    <div class="card-body">
+                        <h5 id="card-23" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div id="index-24" class="card" index="24">
+                    <div class="card-body">
+                        <h5 id="card-24" class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</main><!-- /.container -->
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="../js/app.js" th:href="@{/js/app.js}"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body {
+    padding-top: 5rem;
+}
+
+.main-container {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.color-Red {
+    background-color: red;
+}
+
+.color-Blue {
+    background-color: blue;
+}
+
+.color-Gray {
+    background-color: gray;
+}
+
+.color-Black {
+    background-color: black;
+}
+
+.status-Available {
+    background-color: darkgreen; !important;
+}
